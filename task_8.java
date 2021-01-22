@@ -5,7 +5,7 @@ public class task_8 {
         int hours = 0;
         int minutes = 0;
 
-        while (number > 60){
+        while (number >= 60){
             number -= 60;
             minutes = number;
             ++hours;
@@ -21,8 +21,9 @@ public class task_8 {
             System.out.println(hours + " Hours, " + minutes + " minute");
         }
         if (hours != 1 && minutes != 1){
-            System.out.println(hours + " Hours, " + minutes + " minutes" );
+            System.out.println(hours + " Hours, " + number + " minutes" );
         }
+ 
     }
 
     public static void main(String [] args){
