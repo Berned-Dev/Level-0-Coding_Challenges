@@ -2,7 +2,7 @@ public class task_7 {
 
     static double getFahrenheitTemp(double temperatureCelsius){
         double fahrenheitTemperature;
-        fahrenheitTemperature = (temperatureCelsius * 9/5) * 32;
+        fahrenheitTemperature = (temperatureCelsius * 9/5) + 32;
         return fahrenheitTemperature;
     }
 
@@ -14,6 +14,6 @@ public class task_7 {
 
     public static void main (String [] args){
         System.out.println(getFahrenheitTemp(5));
-        System.out.println(getCelsiusTemp(40));
+        System.out.println(getCelsiusTemp(41));
     }
 }
