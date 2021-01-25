@@ -1,15 +1,15 @@
 public class task_4 {
 
-    static void getEvenOrOdd(int number){
+    static void isEvenOrOdd(int number){
         if (number % 2 == 0){
-            System.out.println("Even");
+            System.out.println("even");
         }
         else{
-            System.out.println("Odd");
+            System.out.println("odd");
         }
     }
 
     public static void main(String [] args){
-        getEvenOrOdd(3);
+        isEvenOrOdd(3);
     }
 }
