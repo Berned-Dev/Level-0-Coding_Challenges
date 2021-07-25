@@ -1,4 +1,4 @@
-public class task_9 {
+public class Task9 {
 
     static void getVowels(String string){
 
