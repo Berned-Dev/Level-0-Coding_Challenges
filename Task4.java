@@ -1,4 +1,4 @@
-public class task_4 {
+public class Task4 {
 
     static void isEvenOrOdd(int number){
         if (number % 2 == 0){

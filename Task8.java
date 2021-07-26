@@ -1,4 +1,4 @@
-public class task_8 {
+public class Task8 {
 
     static void getHoursAndMinutes(int number){
 

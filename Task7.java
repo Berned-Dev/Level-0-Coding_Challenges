@@ -1,4 +1,4 @@
-public class task_7 {
+public class Task7 {
 
     static double getFahrenheitTemp(double temperatureCelsius){
         double fahrenheitTemperature;

@@ -1,4 +1,4 @@
-public class task_2 {
+public class Task2 {
     public static void main(String [] args){
         int x = 1 + 1 * 2;
         int y = (1 + 1) * 2;

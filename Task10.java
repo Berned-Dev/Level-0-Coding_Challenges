@@ -1,4 +1,4 @@
-public class task_10 {
+public class Task10 {
 
     static void getCommonChar(String stringOne, String stringTwo) {
 
