@@ -1,28 +1,45 @@
+import java.util.ArrayList;
+
 public class Task9 {
-
-    static void getVowels(String string){
-
+    static String getVowels(String string){
         char[] stringArray = string.toCharArray();
+        ArrayList<String> vowels = new ArrayList<>();
         for (int i = 0; i < string.length(); i++){
             if (stringArray[i] == 'a' || stringArray[i] == 'A'){
-                System.out.print(" a");
+                vowels.add("a");
             }
             if (stringArray[i] == 'e' || stringArray[i] == 'E'){
-                System.out.print(" e");
+                vowels.add("e");
             }
             if (stringArray[i] == 'i' || stringArray[i] == 'I'){
-                System.out.print(" i");
+                vowels.add("i");
             }
             if (stringArray[i] == 'o' || stringArray[i] == 'O'){
-                System.out.print(" o");
+                vowels.add("o");
             }
             if (stringArray[i] == 'u' || stringArray[i] == 'U'){
-                System.out.print(" u");
+                vowels.add("u");
             }
         }
+        String vowelsString = "";
+        for (int i = 0; i < vowels.size(); i++) {
+            if(!(vowelsString.contains(vowels.get(i)))) {
+                vowelsString += vowels.get(i);
+            }
+        }
+
+        String[] splitVowels = vowelsString.split("");
+        String finalVowels = "";
+        for(int i = 0; i < splitVowels.length; i++){
+            finalVowels += splitVowels[i];
+            if(i != splitVowels.length-1) {
+                finalVowels += ", ";
+            }
+        }
+        return finalVowels;
     }
 
     public static void main(String [] args){
-        getVowels("BeAutIful");
+        System.out.print(getVowels("Umuzi"));
     }
 }
