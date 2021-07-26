@@ -11,9 +11,7 @@ public class Task10 {
                 for (int i = 0; i < stringOne.length(); i++) {  
                     if (stringTwoArray[j] == stringOneArray[i]) {
                         System.out.print(stringOneArray[i] + ", ");
-                        
                     }
-                    
                 }
             }
     }
