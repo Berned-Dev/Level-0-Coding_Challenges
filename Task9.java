@@ -40,6 +40,6 @@ public class Task9 {
     }
 
     public static void main(String [] args){
-        System.out.print(getVowels("Umuzi"));
+        System.out.print("Vowels: " + getVowels("Umuzi"));
     }
 }
