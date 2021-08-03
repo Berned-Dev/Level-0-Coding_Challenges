@@ -1,50 +1,34 @@
-import java.util.ArrayList;
-
 public class Task6 {
 
-    static int getMaximumNumber(int numberOne, int numberTwo, int numberThree){
-        ArrayList<Integer> numberList = new ArrayList<>();
+
+    static int getMaximumNumber(int numberOne, int numberTwo, int numberThree) {
+
         int results = 0;
-        if (numberOne > numberTwo && numberOne > numberThree){
+        if (numberOne > numberTwo && numberOne > numberThree) {
             results = numberOne;
         }
-        if (numberTwo > numberOne && numberTwo > numberThree){
+        if (numberTwo > numberOne && numberTwo > numberThree) {
             results = numberTwo;
         }
-        if (numberThree > numberOne && numberThree > numberTwo){
+        if (numberThree > numberOne && numberThree > numberTwo) {
             results = numberThree;
         }
-        if (numberOne == numberTwo && numberTwo == numberThree){
+        if (numberOne == numberTwo && numberTwo == numberThree) {
             results = numberOne;
         }
-        if (numberOne < 0){
-            if(numberTwo > numberThree){
-                results = numberTwo;
-            }
-            else {
-                results = numberThree;
-            }
+        if (numberOne < 0) {
+            results = Math.max(numberTwo, numberThree);
         }
-        if (numberTwo < 0){
-            if(numberOne > numberThree){
-                results = numberOne;
-            }
-            else {
-                results = numberThree;
-            }
+        if (numberTwo < 0) {
+            results = Math.max(numberOne, numberThree);
         }
-        if (numberThree < 0){
-            if(numberTwo > numberOne){
-                results = numberTwo;
-            }
-            else {
-                results = numberOne;
-            }
+        if (numberThree < 0) {
+            results = Math.max(numberTwo, numberOne);
         }
         return results;
     }
 
-    public static void main(String [] args){
-        System.out.print(getMaximumNumber(-74,-74, 74));
+    public static void main(String[] args) {
+        System.out.print(getMaximumNumber(-74, -74, 74));
     }
 }
